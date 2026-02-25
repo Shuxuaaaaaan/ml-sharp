@@ -145,7 +145,7 @@ class ParallaxViewer(QLabel):
         self.render_worker.render_done.connect(self.update_image)
         self.setMouseTracking(True)
         self.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.setText("双击左侧列表中的 .ply 文件开始加载 3D 模型\\n加载完成后在画面上滑动鼠标查看实时视差")
+        self.setText("双击左侧列表中的.ply文件开始加载3D模型，加载完成后在画面上滑动鼠标查看实时视差")
         self.setStyleSheet("background-color: #1e1e1e; color: #ffffff; font-size: 16px;")
         self.is_loaded = False
 
